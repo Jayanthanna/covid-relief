@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="upload">
+            <!-- anchor tags to go to different pages -->
+            <div class="row1" id="buttons">
+                <a href="index.html" class=" btn1">Upload</a>
+                <!-- this takes us to a site where google spread sheet data is shown in html table form -->
+                <a href="https://script.google.com/macros/s/AKfycbz3vXsoYbKOGLcKHqP_Zb5U7tHkvH-TIO2TI5IU5C_wQNlV9wOKVhdBxB2XGxU_l0o5ug/exec" target="_blank" class="btn1">Find</a>
+                <a href="remove.html" class=" btn1">Remove</a>
+            </div>
+            <form action="index.html" id="form-submit" method="post" name="google-sheet">
+                <input required type="number" placeholder="Enter the number you want to remove" name="number" class="input">
+                <br>
+                <textarea required name="desc" id="desc" cols="35" rows="7" class="input" placeholder="Description (why do you want to remove this particular entry)"></textarea><br>
+                <input type="checkbox" name="check" id="check" required>
+                <label for="check" id="term"> Do you agree to our <a href="privacy.html">terms and conditions</a>?</label> <br>
+                <input type="submit" name="submit" class="btn-success" id="button-submit" value="Upload" onclick="submit123()"><br>
+                <!--  boot strap button to prevent user from entering same information twice -->
+                <button class="btn btn-success input" id="disabled" disabled>
+                    <span class="spinner-grow"></span>Loading
+                </button><br>
+                <a href="mailto:testofficialwebsite@gmail.com" id="contact">contact us</a>
+            </form>
+        </div>
+        <script src="remove.js"></script>
+    </body>
+</html>

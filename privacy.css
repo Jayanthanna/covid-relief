@@ -1,0 +1,24 @@
+/* normal styling for privacy policy page */
+body{
+    padding: 20px;
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+}
+span{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+}
+h3{
+    font-size: 25px;
+    font-weight: 650;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+}

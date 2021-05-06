@@ -1,0 +1,199 @@
+/* background image for website */
+body{
+    background-image: url('1stpage/oxygen.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+/* floating all elements to the right */
+#upload{
+    float: right;
+}
+/* styling for anchor tags at the top of the page */
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* styling for all anchor tags */
+.btn1
+{
+    background-color: transparent;
+    border:none;
+    color:white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    width: 28%;
+    margin-left: 20px;
+}
+/*  hover styling for all anchor tags */
+.btn1:hover
+{
+    text-decoration: none;
+    color: aqua;
+}
+/* HTML form styling */
+#form-submit
+{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    text-align: center;
+    overflow: hidden;
+    white-space:nowrap ;
+    text-decoration: none;
+} 
+/* all input fields styling */
+.input
+{
+    border: 2px solid black;
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+}
+/*  placeholder styling */
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+/* submit button styling */
+#button-submit
+{
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* styling of terms and condition link and paragraph tag */
+#term
+{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 15px;
+    overflow: hidden;
+    white-space:nowrap ;
+    text-decoration: none;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+/* disabled button styling (Bootstrap) */
+#disabled
+{
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+/* description field in remove.html si it cannot be resized */
+#desc
+{
+    resize: none;
+}
+/* contact us via email styling */
+#contact
+{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    text-align: center;
+    overflow: hidden;
+    white-space:nowrap ;
+    text-decoration: none;
+    padding-left: 40%;
+}
+/*  styling for mobile phone and all device with 480 px width */
+@media only screen and (max-width: 480px)
+{
+    .row1
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn1
+    {
+        background-color: transparent;
+        border:none;
+        color:white;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+        text-decoration: none;
+        padding-top: 30px;
+        width: 10%;
+        
+    }
+    .btn1:hover
+    {
+        text-decoration: none;
+        color: aqua;
+    }
+    .input
+    {
+        border: 2px solid black;
+        background-color: transparent;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 0%;
+        margin-left: 0%;
+        
+    }
+    #button-submit
+    {
+        width: 70%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    #term
+    {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+        text-align: center;
+        letter-spacing: 0;
+        overflow: hidden;
+        white-space:nowrap ;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 5%;
+        margin-left: 5%;
+        display: block;
+    }
+    #form-submit
+    {
+        font-size: 15px;
+        font-weight: 600;
+        font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+        text-align: center;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    #upload{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        float: none;
+    }
+    #contact
+    {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+        text-align: center;
+        overflow: hidden;
+        white-space:nowrap ;
+        text-decoration: none;
+        padding-left: 0;
+    }
+}
